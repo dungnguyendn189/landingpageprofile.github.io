@@ -76,7 +76,7 @@ header {
   width: 60%;
   height: 100%;
   background-color: var(--grey);
-  z-index: 5;
+  z-index: 9;
   transition: var(--smooth);
   transform: translateX(-100%);
   opacity: 0;
@@ -185,6 +185,10 @@ header {
     .navbar__icons {
         display: none;
     }
+
+    .navbar__btn{
+      background-color: var(--grey);
+    }
 }
 
 /* Banner */
@@ -200,6 +204,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
 }
 
 .banner__heading {
@@ -243,4 +248,87 @@ header {
     color: var(--geen-l);
     transition: var(--smooth);
 
+}
+
+@media (min-width: 992px) {
+  .banner__heading{
+    text-align: initial;
+    padding-top: 0;
+    margin: 0;
+  }
+  .banner__socials{
+    justify-content: flex-start;
+  }
+  .banner__socials a {
+    margin-right: 45px;
+  }
+  .banner-img{
+    width: 60%;
+  }
+}
+
+/* THING */
+#thing{
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 15em;
+}
+
+#thing h2 {
+  text-align: center;
+  color: var(--grey);
+  margin-bottom: 3em;
+}
+
+.thing__item {
+  margin: 3em 0;
+}
+
+.thing__item img {
+  margin-bottom: 4em;
+}
+
+.thing__item--heading{
+  text-align: center;
+  color: var(--grey);
+}
+
+.thing__item--heading p{
+  max-width: 300px;
+  margin: 0 auto;
+  line-height: 2rem;
+  font-weight: 300;
+  padding-top: 1em;
+}
+
+@media (min-width: 62em) {
+  .thing__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+  .thing__item img{
+    width: 40%;
+    padding-bottom: 0;
+  }
+  .thing__item--heading{
+    width: 45%;
+    text-align: initial;
+  }
+  .thing__item--heading p {
+    max-width: 500px;
+    margin: 0;
+  }
+
+  .thing__item:nth-child(odd) img{
+    order: 2;
+    width: 40%;
+    padding-bottom: 0;
+  }
+  .thing__item--heading:nth-chil(odd) p{
+    order: 1;
+    width: 45%;
+    text-align: initial;
+  }
 }
