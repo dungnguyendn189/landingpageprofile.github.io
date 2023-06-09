@@ -168,107 +168,112 @@ header {
 
 
 @media (min-width: 992px) {
-    .navbar__links{
-        transform: translatex(0);
-        position: initial;
-        translate: 0;
-        opacity: 1;
-        background-color: transparent;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .navbar__link a{
-        color: var(--grey);
+  .navbar__links {
+    transform: translatex(0);
+    position: initial;
+    translate: 0;
+    opacity: 1;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-    }
-    .navbar__icons {
-        display: none;
-    }
+  .navbar__link a {
+    color: var(--grey);
 
-    .navbar__btn{
-      background-color: var(--grey);
-    }
+  }
+
+  .navbar__icons {
+    display: none;
+  }
+
+  .navbar__btn {
+    background-color: var(--grey);
+  }
 }
 
 /* Banner */
 
-#banner{
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+#banner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.banner-img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+.banner-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .banner__heading {
-    max-width: 300px;
-    margin: 0 auto;
-    color: var(--grey);
-    text-align: center;
-    z-index: 3;
+  max-width: 300px;
+  margin: 0 auto;
+  color: var(--grey);
+  text-align: center;
+  z-index: 3;
 }
 
-.banner__heading h1{
-    font-size: 2.25rem;
-    padding-top: 4em;
-    margin-bottom: 0.8em;
+.banner__heading h1 {
+  font-size: 2.25rem;
+  padding-top: 4em;
+  margin-bottom: 0.8em;
 }
 
 .banner__heading p {
-    font-weight: 300;
-    line-height: 2em;
-    margin-bottom: 1.5em;
+  font-weight: 300;
+  line-height: 2em;
+  margin-bottom: 1.5em;
 
 }
 
-.banner__btn{
-    font-size: 1.5rem;
+.banner__btn {
+  font-size: 1.5rem;
 }
 
-.banner__socials{
-    margin-top: 3em;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
+.banner__socials {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
 }
 
 .banner__socials a {
-    color: var(--grey);
-    transition: var(--smooth);
+  color: var(--grey);
+  transition: var(--smooth);
 }
 
-.banner__socials a :hover{
-    color: var(--geen-l);
-    transition: var(--smooth);
+.banner__socials a :hover {
+  color: var(--geen-l);
+  transition: var(--smooth);
 
 }
 
 @media (min-width: 992px) {
-  .banner__heading{
+  .banner__heading {
     text-align: initial;
     padding-top: 0;
     margin: 0;
   }
-  .banner__socials{
+
+  .banner__socials {
     justify-content: flex-start;
   }
+
   .banner__socials a {
     margin-right: 45px;
   }
-  .banner-img{
+
+  .banner-img {
     width: 60%;
   }
 }
 
 /* THING */
-#thing{
+#thing {
   position: relative;
   overflow-x: hidden;
   margin-top: 15em;
@@ -288,12 +293,12 @@ header {
   margin-bottom: 4em;
 }
 
-.thing__item--heading{
+.thing__item--heading {
   text-align: center;
   color: var(--grey);
 }
 
-.thing__item--heading p{
+.thing__item--heading p {
   max-width: 300px;
   margin: 0 auto;
   line-height: 2rem;
@@ -302,33 +307,60 @@ header {
 }
 
 @media (min-width: 62em) {
-  .thing__item{
+  .thing__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
   }
-  .thing__item img{
+
+  .thing__item img {
     width: 40%;
     padding-bottom: 0;
   }
-  .thing__item--heading{
+
+  .thing__item--heading {
     width: 45%;
     text-align: initial;
   }
+
   .thing__item--heading p {
     max-width: 500px;
     margin: 0;
   }
 
-  .thing__item:nth-child(odd) img{
+  .thing__item:nth-child(odd) img {
     order: 2;
     width: 40%;
     padding-bottom: 0;
   }
-  .thing__item--heading:nth-chil(odd) p{
+
+  .thing__item--heading:nth-chil(odd) p {
     order: 1;
     width: 45%;
     text-align: initial;
   }
+}
+
+.things__dec {
+  position: absolute;
+  transform: translateX(-60%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.things__dec:nth-child(2){
+  top: initial;
+  left: initial;
+  bottom: 15%;
+  right: 0;
+  transform: translateX(60%);
+  z-index: -1;
+}
+
+#work{
+  padding-top: 10em;
+  position: relative;
+  overflow-x: hidden;
 }
